@@ -1,0 +1,9 @@
+- name: Build the extension
+  uses: php/php-windows-builder/extension@v1
+  with:
+    extension-url: https://github.com/phpredis/phpredis   
+    extension-ref: '6.1.0'
+    php-version: '8.1'
+    ts: nts
+    arch: x64
+    args: --enable-redis-igbinary
